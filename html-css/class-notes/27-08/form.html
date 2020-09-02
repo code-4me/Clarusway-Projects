@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="result.html" method="GET" name="myform"></form>
+    <div>
+        <label for="cas">Choose a car :</label>
+        <br>
+        <select name="cars" id="cars" multiple>
+            <option value="disabled selected value">Choose a car</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Maserati">Maserat</option>
+            <option value="BMW">BMW</option>
+            <option value="Tesla">Tesla
+
+            </option>
+        </select>
+
+    </div>
+    <br>
+    <div>
+        <label for="message">Enter Comment here:</label>
+        <br>
+        <textarea name="message" id="t-rea" style="width:200px; height:200px" maxlength="50">Enter text here</textarea>
+    </div>
+    <div>
+        <label for="browsers">Browsers:</label>
+        <input type="text" list="browsers" name="options">
+        <datalist id="browsers">
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="IE"></option>
+        </datalist>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" value="Kadir">
+            <br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" name="lname" id="lname">
+        </fieldset>
+    </div>
+
+    <input type="submit" value="Send">
+</body>
+</html>
